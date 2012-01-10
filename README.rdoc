@@ -1,0 +1,5 @@
+= Mobile Web Example
+
+This repositories contains an example application of Entropi LLC open source projects put together to form a framework for a small 
+web based mobile application that could be used within a native wrapper or deployed from a web server.
+
