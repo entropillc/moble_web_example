@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Mobile App Demonstration</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="imagetoolbar" content="false"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="apple-touch-icon-precomposed" href="images/Icon-57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/Icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/Icon-114.png"/>
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap-verticaltabs.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="externals/bootstrap-flyout-list/bootstrap-flyout-list.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="externals/Pushpop/pushpop.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="externals/Pushpop/tableview.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/table-view.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/arrows.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/animated-splash.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="externals/jquery.slidingdrawer/jquery.slidingdrawer.css"/>
+  
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/bootstrap.dropdown.js"></script>
+  <script src="javascripts/bootstrap.twipsy.js"></script>
+  <script src="javascripts/bootstrap.modal.js"></script>
+  <script src="javascripts/bootstrap.popover.js"></script>
+  <script src="javascripts/bootstrap-tabs.js"></script>
+  <script src="externals/bootstrap-flyout-list/bootstrap-flyout-list.js"></script>
+  <script src="javascripts/bootstrap-edit-modal.js"></script>
+  <script src="externals/Pushpop/pushpop.js"></script>
+  <script src="externals/jquery.slidingdrawer/jquery.slidingdrawer.js"></script>
+  <script type="text/javascript">
+	$(function() {
+	  $('.tabs').tabs();
+	});
+	</script>
+<head>
+<body>
+  <div class="topbar">
+    <div class="fill">
+      <div class="container">
+        <a class="brand pop slideHorizontal" href="#root">Mobile App Demonstration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer">
+    <div class="drawer-handle"></div>
+    <ul class="flyout-list">
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+      <li><a href="#modal-example"><span class="flyout-list-card">Lorem ipsum dolor sit amet</span></a></li>
+    <ul>
+  </div>
+  
+  <div class="view" id="root">
+    <img class="animated-splash center" src="stylesheets/images/logo-foreground.png"/>
+    <div class="welcomeNavigation">
+      <ul>
+        <li><input type="text" name="username" value="Username"></li>
+        <li><input type="password" name="password" value="thisisthepassword"></li>
+        <li><a class="btn primary push slideHorizontal" href="#choosePath">Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="view" id="choosePath">
+    <div class="container-fluid">
+      <div class="tablet">
+        <ul class="tableview">
+          <li class="header">These Are Supported Transitions</li>
+          <li><a class="push disclosure-indicator slideHorizontal" href="#slideHorizontal">Slide Horizontal</a></li>
+          <li><a class="push disclosure-indicator slideVertical" href="#slideVertical">Slide Vertical</a></li>
+          <li><a class="push disclosure-indicator flipHorizontal" href="#flipHorizontal">Flip Horizontal</a></li>
+          <li><a class="push disclosure-indicator flipVertical" href="#flipVertical">Flip Vertical</a></li>
+          <li><a class="push disclosure-indicator cardSwap" href="#cardSwap">Card Swap</a></li>
+          <li><a class="push disclosure-indicator crossFade" href="#crossFade">Cross Fade</a></li>
+          <li class="last-child"><a class="push disclosure-indicator zoom" href="#zoom">Zoom</a></li>
+          <li class="header">This Is A Header</li>
+          <li>Keyboard</li>
+          <li class="detail-disclosure-button">International</li>
+          <li>Accessibility</li>
+          <li class="checkmark">Selection</li>
+        </ul>
+
+        <ul class="tableview">
+          <li class="header">Picker Table Cells</li>
+          <li class="picker-cell">
+            <input type="hidden" name="color" value="1"/>
+            <label>Color</label>
+            <ul class="tableview">
+              <li class="header">Select A Color</li>
+              <li data-value="1">Red</li>
+              <li>Yellow</li>
+              <li data-value="3">Orange</li>
+              <li>Green</li>
+              <li data-value="5">Blue</li>
+              <li>Purple</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***************** Modal Windows *************************** -->
+  <div id="modal-example" class="modal hide fade">
+    <div class="modal-header">
+      <a href="#" class="close">&times;</a>
+      <h3>Modal</h3>
+    </div>
+    <div class="modal-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn primary">Close</a>
+    </div>
+  </div>
+  
+</body>
+
+</html>

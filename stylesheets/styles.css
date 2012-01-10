@@ -1,0 +1,193 @@
+html, body {
+  background-color: #444;
+}
+
+.view {
+  background: #222 url('images/leather-background.jpg') repeat;
+}
+
+.hero-unit {
+  padding-right: 200;
+}
+
+.animated-splash + img {
+  padding-top: 40px;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+div.welcomeNavigation {
+  padding-top: 60px;
+}
+
+div.welcomeNavigation ul{
+  list-style-type: none;
+  padding-right: 20px;
+  margin: auto 0;
+  text-align: center;
+}
+
+div.welcomeNavigation ul > li {
+  padding-left: 20px;
+  padding-right: 5px;
+  display: inline;
+}
+
+/*
+  Flyout list notecards
+*/
+ul.flyout-list span.flyout-list-card {
+  padding-left: 10px;
+  color: #404040;
+  font-weight: bold;
+}
+
+ul.flyout-list a:hover {
+  text-decoration: none;
+}
+
+/*
+  Process flow classes 
+*/
+div.process-flow {
+  margin: 10px 0;
+}
+
+div.process-flow > [class*="span"] {
+  margin: 0;
+}
+
+div.process-flow div.span1 {
+  padding-top: 10px;
+}
+
+/*
+ Adding spacing to move veritical tabs down from top 40px
+*/
+.verticaltabs-container > .tabs {
+  background: #f8f8f2 url('images/leather-background.jpg') repeat;
+  border: none;
+  padding-left: 50px;
+  z-index: 99999;
+}
+
+.verticaltabs-container > .tabs a {
+  background: #ccc; /* Old browsers */
+  background: -moz-linear-gradient(left, #eee 0%, #ccc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eee), color-stop(100%, #ccc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #eee 0%, #ccc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #eee 0%, #ccc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #eee 0%, #ccc 100%); /* IE10+ */
+  background: linear-gradient(left, #eee 0%, #ccc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#ccc', GradientType=1); /* IE6-9 */
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.verticaltabs-container > .tabs a:hover {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.verticaltabs-container > .tabs > li.active a {
+  background: #f8f8f2 url('images/paper-background.jpg') repeat;
+  border: none;
+}
+
+.verticaltabs-container > .tabs > li.active a:hover {
+  border: none;
+}
+
+/*
+	Styling tablet area of site.
+*/
+div.tablet {
+  background: #f8f8f2 url('images/paper-background.jpg') repeat;
+  position: relative;
+  min-height: 650px;
+	background-color: #f5f5f5;
+	margin: 10px 0 10px 24px;
+	padding: 16px 16px 48px 32px;
+	overflow: visible;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  box-shadow: -2px 1px 16px 6px #000;
+  -webkit-box-shadow: -2px 1px 16px 6px #000;
+  -moz-box-shadow: -2px 1px 16px 6px #000;
+}
+
+div.tablet:before {
+  background: url('images/binder-ring.png') repeat-y;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -24px;
+  top: 0;
+  width: 48px;
+  height: 100%;
+}
+
+div.tablet:after {
+  background: #e8e8e2 url('images/paper-stack-side.jpg') repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+}
+
+/*
+  Auto-grow textareas
+*/
+textarea.autogrow {
+  border: 0;
+  overflow: auto;
+  resize:none;
+  width: 400px;
+  height: auto;
+}
+
+div.topbar {
+  z-index: 9999990;
+  -webkit-transform: perspective(0) translate3d(0, 0, 300px) !important;
+}
+
+div.drawer > ul.flyout-list {
+  margin-top: 40px;
+}
+
+<<<<<<< HEAD
+ul.table-view select {
+  border: none;
+  outline:none;
+  width:810px;
+  margin-top:-3px;
+  margin-bottom:-3px;
+  margin-left:-1px;
+  margin-right:-1px;
+  
+  
+}
+
+div.select-container{
+   overflow:hidden;
+   border:none;
+   width:786px;
+   outline:none;
+
+  
+}
+=======
+#root {
+  padding-top: 60px;
+}
+>>>>>>> 086c134beddf584b17a7f3c8f10ccb12e4d92240
